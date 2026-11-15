@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>OssBuy spreadsheet | Categorías, tallas y revisión QC</title>
+<meta name="description" content="Explora diez categorías en CAFANS y aprende a usar OssBuy spreadsheet para comparar tallas, verificar fotos QC y calcular el coste total antes de comprar.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="OssBuy spreadsheet | Categorías, tallas y revisión QC">
+<meta property="og:description" content="Diez categorías en CAFANS y una guía en español para comparar tallas, revisar fotos y preparar tu presupuesto.">
+<meta name="theme-color" content="#f7f3ee">
+<link rel="preconnect" href="https://static.nike.com">
+<!--
+Investigación SEO: Google devolvió una pantalla de verificación sin resultados legibles.
+La búsqueda web alternativa permitió analizar estas diez páginas. Su orden no representa posiciones en Google.
+ossbuyspreadsheets.org: directorio, QC y guías de envío.
+chinagrails.com/en/spreadsheet/agent/ossbuy: categorías, fotos y peso.
+ossbuy-link.com/spreadsheet: URL original, identificador y verificación.
+ossbuying.com: preguntas de compradores, tallas y pasos del pedido.
+ossbuy-sheets.com: directorio de hallazgos de tiendas chinas.
+ossbuy.delivery: zapatillas, moda urbana y filtros por tipo de prenda.
+oopbuy.tips/ossbuy-spreadsheet: comisiones, devoluciones y almacenamiento.
+mickeybuys.com/agents/ossbuy/: agentes, almacenes y gastos.
+ossbuy-spreadsheets.com: catálogo de hallazgos y navegación comercial.
+reddit.com/r/RepNewFinds: listas compartidas y enlaces de la comunidad.
+Secundarias: guía de compra OssBuy; catálogo por categorías; fotos QC; coste total del pedido; tabla de tallas.
+Long tail:
+cómo usar OssBuy spreadsheet; qué es OssBuy spreadsheet; OssBuy spreadsheet en español;
+cómo guardar enlaces de productos; cómo comprobar el enlace original; cómo verificar la variante elegida;
+zapatillas por longitud de plantilla; comparar tallas de zapatillas en centímetros; cómo medir una sudadera;
+cómo elegir talla de camiseta; comparar medidas de chaquetas; medir la cintura de un pantalón;
+cómo ajustar una gorra; comparar tallas de un conjunto; cómo elegir talla de ropa interior;
+camisetas deportivas por medidas; cómo comparar accesorios; qué son las fotos QC;
+cómo pedir fotos QC adicionales; revisar costuras en fotos QC; comprobar el código de una etiqueta;
+cómo calcular el coste total del pedido; diferencia entre peso real y volumétrico;
+cómo comparar opciones de envío; qué revisar antes del envío internacional;
+cómo confirmar el plazo de devolución; coste de envío por destino; cómo identificar una ficha desactualizada.
+-->
+<style>
+:root{color-scheme:light;--paper:#f7f3ee;--ink:#22212a;--muted:#5c5461;--accent:#611f3b;--line:#dacbd2;--white:#fff;--tint:#f0e5eb}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+a{color:var(--accent);text-underline-offset:.2em}
+a:focus-visible,summary:focus-visible{outline:3px solid #a04e27;outline-offset:4px}
+.wrap{width:min(72rem,calc(100% - 2rem));margin-inline:auto}
+header,footer{padding:1rem 0;border-block:1px solid var(--line)}
+header a{font-weight:800;letter-spacing:.09em;text-decoration:none}
+section{margin-block:2.7rem}
+h1,h2,h3,p,figure{margin:0}
+h1,h2,h3{line-height:1.12}
+h1{font-size:clamp(2.45rem,7vw,5.5rem);letter-spacing:-.065em;margin-bottom:1rem;overflow-wrap:anywhere}
+h2{font-size:clamp(1.65rem,4vw,2.55rem);letter-spacing:-.045em;margin-bottom:1rem}
+h3{font-size:1.2rem;margin-bottom:.55rem}
+p+p{margin-top:.85rem}
+.hero{display:grid;grid-template-columns:1fr .72fr;align-items:center;gap:clamp(1rem,5vw,4rem);margin-block:1.5rem}
+.hero p{max-width:42ch}
+.hero img{aspect-ratio:4/3;object-fit:contain;background:#f4f4f4}
+img{display:block;width:100%;height:auto;border-radius:.7rem}
+figcaption{font-size:.85rem;color:var(--muted);margin-top:.35rem}
+.action{display:inline-block;margin-top:1rem;padding:.6rem 1rem;border-radius:.45rem;background:var(--accent);color:var(--white);font-weight:700}
+.categories,.gallery{display:grid;gap:.65rem;list-style:none;padding:0;margin:0}
+.categories{grid-template-columns:repeat(auto-fit,minmax(min(100%,10rem),1fr))}
+.categories a{display:flex;align-items:center;min-height:3rem;height:100%;padding:.55rem .8rem;border:1px solid var(--line);border-radius:.45rem;background:var(--white);text-decoration:none;font-weight:680}
+.categories a:hover{background:var(--tint);text-decoration:underline}
+.gallery{grid-template-columns:repeat(4,1fr);gap:1rem}
+.gallery img{aspect-ratio:1;object-fit:contain;background:#fff}
+.guides{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+article{background:var(--white);border-top:3px solid var(--accent);padding:1rem}
+details{border-top:1px solid var(--line);padding:.75rem 0}
+details p{margin-top:.45rem;max-width:75ch}
+summary{cursor:pointer;font-weight:700}
+.footer-note{color:var(--muted);font-size:.9rem}
+@media(max-width:44rem){.hero,.guides{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "inLanguage": "es",
+      "name": "OssBuy spreadsheet",
+      "description": "Explora diez categorías en CAFANS y aprende a usar OssBuy spreadsheet para comparar tallas, verificar fotos QC y calcular el coste total antes de comprar.",
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "Categorías de CAFANS",
+        "itemListElement": [
+          {"@type":"ListItem","position":1,"name":"Zapatillas","url":"https://cafans.com/category-911-Shoes.html"},
+          {"@type":"ListItem","position":2,"name":"Sudaderas y jerséis","url":"https://cafans.com/category-912-Hoodies%2FSweaters.html"},
+          {"@type":"ListItem","position":3,"name":"Camisetas","url":"https://cafans.com/category-913-T-Shirts.html"},
+          {"@type":"ListItem","position":4,"name":"Chaquetas","url":"https://cafans.com/category-914-Jackets.html"},
+          {"@type":"ListItem","position":5,"name":"Pantalones y shorts","url":"https://cafans.com/category-915-Pants%2FShorts.html"},
+          {"@type":"ListItem","position":6,"name":"Gorras y sombreros","url":"https://cafans.com/category-916-Headwear.html"},
+          {"@type":"ListItem","position":7,"name":"Conjuntos","url":"https://cafans.com/category-917-Sets.html"},
+          {"@type":"ListItem","position":8,"name":"Ropa interior","url":"https://cafans.com/category-918-underwear%2Funderpants.html"},
+          {"@type":"ListItem","position":9,"name":"Camisetas deportivas","url":"https://cafans.com/category-919-Jersey.html"},
+          {"@type":"ListItem","position":10,"name":"Accesorios","url":"https://cafans.com/category-920-Accessories.html"}
+        ]
+      }
+    },
+    {
+      "@type":"FAQPage",
+      "inLanguage":"es",
+      "mainEntity":[
+        {"@type":"Question","name":"¿Qué es OssBuy spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"Es una lista de referencias que permite organizar enlaces de productos y comparar variantes antes de decidir qué pedir."}},
+        {"@type":"Question","name":"¿Qué son las fotos QC?","acceptedAnswer":{"@type":"Answer","text":"Son imágenes de control de calidad de la unidad recibida. Sirven para revisar color, medidas y defectos visibles. La autenticidad requiere una verificación aparte."}},
+        {"@type":"Question","name":"¿Cómo calculo el coste total del pedido?","acceptedAnswer":{"@type":"Answer","text":"Suma el precio del artículo, el envío interno, la comisión y el porte internacional. Confirma la divisa, el peso facturable y los impuestos o cargos aplicables a tu destino."}},
+        {"@type":"Question","name":"¿A dónde llevan los enlaces de las categorías?","acceptedAnswer":{"@type":"Answer","text":"Las diez categorías abren sus páginas correspondientes en CAFANS."}}
+      ]
+    }
+  ]
+}
+</script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/pmmwu/">
+</head>
+<body>
+<header><div class="wrap"><a href="https://www.cafans.com" aria-label="Inicio de CAFANS">CAFANS</a></div></header>
+<main class="wrap">
+  <section class="hero" aria-labelledby="titulo">
+    <div>
+      <h1 id="titulo">OssBuy spreadsheet</h1>
+      <p>Explora el catálogo por categorías de CAFANS y organiza tus referencias de compra. Compara medidas, comprueba la variante y calcula cuánto costaría recibir el pedido en tu destino.</p>
+      <a class="action" href="https://www.cafans.com">Explorar CAFANS</a>
+    </div>
+    <figure>
+      <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto%2Cq_auto%3Aeco%2Cc_scale%2Cw_300%2Cu_9ddf04c7-2a9a-4d76-add1-d15af8f0263d%2Cc_scale%2Cfl_relative%2Cw_1.0%2Ch_1.0%2Cfl_layer_apply/f888b4a3-a02a-420d-93e3-cb33c3bb30ac/AIR%2BFORCE%2B1%2B%2707.png" width="640" height="480" fetchpriority="high" alt="Zapatilla blanca Nike Air Force 1 ’07 con puntera perforada">
+      <figcaption>Nike Air Force 1 ’07 · referencia visual</figcaption>
+    </figure>
+  </section>
+  <section aria-labelledby="categorias">
+    <h2 id="categorias">Categorías de CAFANS</h2>
+    <nav aria-labelledby="categorias">
+      <ul class="categories">
+        <li><a href="https://cafans.com/category-911-Shoes.html">Zapatillas</a></li>
+        <li><a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">Sudaderas y jerséis</a></li>
+        <li><a href="https://cafans.com/category-913-T-Shirts.html">Camisetas</a></li>
+        <li><a href="https://cafans.com/category-914-Jackets.html">Chaquetas</a></li>
+        <li><a href="https://cafans.com/category-915-Pants%2FShorts.html">Pantalones y shorts</a></li>
+        <li><a href="https://cafans.com/category-916-Headwear.html">Gorras y sombreros</a></li>
+        <li><a href="https://cafans.com/category-917-Sets.html">Conjuntos</a></li>
+        <li><a href="https://cafans.com/category-918-underwear%2Funderpants.html">Ropa interior</a></li>
+        <li><a href="https://cafans.com/category-919-Jersey.html">Camisetas deportivas</a></li>
+        <li><a href="https://cafans.com/category-920-Accessories.html">Accesorios</a></li>
+      </ul>
+    </nav>
+  </section>
+  <section aria-labelledby="estilos">
+    <h2 id="estilos">Prendas y accesorios de referencia</h2>
+    <div class="gallery">
+      <figure>
+        <img src="https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-double-face-reversible-workwear-blouson--HUB41WWLD6A1_PM1_Cropped%20worn%20view.png?hei=480&amp;wid=480&amp;fmt=jpeg" width="480" height="480" loading="lazy" decoding="async" alt="Modelo con chaqueta azul marino y gorra Louis Vuitton">
+        <figcaption>Chaqueta Louis Vuitton</figcaption>
+      </figure>
+      <figure>
+        <img src="https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1751298339/838745_3HBC4_2600_001_100_0000_Light.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Gorra Gucci de lona beige con motivo GG">
+        <figcaption>Gorra Gucci</figcaption>
+      </figure>
+      <figure>
+        <img src="https://assets.christiandior.com/is/image/diorprod/013J600A0677C080_E01-2?%24default_GH%24=&amp;crop=333%2C163%2C1348%2C1671&amp;extend=0%2C0%2C0%2C250&amp;hei=480&amp;wid=444" width="444" height="480" loading="lazy" decoding="async" alt="Camiseta Dior CD Icon blanca de cuello redondo">
+        <figcaption>Camiseta Dior</figcaption>
+      </figure>
+      <figure>
+        <img src="https://cdn.theluxurycloset.com/uploads/products/750x750/luxury-women-hermes-used-accessories-p718595-002.jpg" width="750" height="750" loading="lazy" decoding="async" alt="Pulsera Hermès Clic H de esmalte negro con cierre dorado en forma de H">
+        <figcaption>Pulsera Hermès</figcaption>
+      </figure>
+    </div>
+  </section>
+  <section aria-labelledby="guia">
+    <h2 id="guia">Guía de compra para usar OssBuy spreadsheet</h2>
+    <div class="guides">
+      <article>
+        <h3>Comprueba el enlace y la talla</h3>
+        <p>Guarda el enlace original, el identificador del producto y la variante de color y talla. Si una ficha abre pero muestra otro modelo, corrige la referencia antes de seguir. En zapatillas, compara la longitud de la plantilla en centímetros. Para sudaderas, camisetas y chaquetas, mide de axila a axila una prenda que ya te quede bien y contrástala con la tabla de tallas.</p>
+        <p>En pantalones, comprueba el ancho de la cintura y cómo lo mide el vendedor. Para gorras, toma el contorno de la cabeza. En conjuntos, revisa por separado las medidas de la parte superior y la inferior.</p>
+      </article>
+      <article>
+        <h3>Revisa las fotos QC</h3>
+        <p>Cuando tengas fotos de control de calidad, comprueba la etiqueta, las costuras y ambos lados del artículo. Pide una foto con cinta métrica si el ajuste depende de una medida concreta. En accesorios, comprueba las dimensiones y el cierre. Si ves una discrepancia, confirma el plazo de devolución antes de autorizar el envío.</p>
+      </article>
+      <article>
+        <h3>Compara el coste de envío</h3>
+        <p>Apunta el precio, la moneda y el coste de entrega al almacén. Para comparar opciones de envío internacional, usa el mismo destino y las medidas del paquete. Pregunta si se factura por peso real o volumétrico y confirma los cargos que se cobran al recibirlo antes de cerrar el presupuesto.</p>
+      </article>
+    </div>
+  </section>
+  <section aria-labelledby="faq">
+    <h2 id="faq">Preguntas frecuentes</h2>
+    <details>
+      <summary>¿Qué es OssBuy spreadsheet?</summary>
+      <p>Es una lista de referencias que permite organizar enlaces de productos y comparar variantes antes de decidir qué pedir.</p>
+    </details>
+    <details>
+      <summary>¿Qué son las fotos QC?</summary>
+      <p>Son imágenes de control de calidad de la unidad recibida. Sirven para revisar color, medidas y defectos visibles. La autenticidad requiere una verificación aparte.</p>
+    </details>
+    <details>
+      <summary>¿Cómo calculo el coste total del pedido?</summary>
+      <p>Suma el precio del artículo, el envío interno, la comisión y el porte internacional. Confirma la divisa, el peso facturable y los impuestos o cargos aplicables a tu destino.</p>
+    </details>
+    <details>
+      <summary>¿A dónde llevan los enlaces de las categorías?</summary>
+      <p>Las diez categorías abren sus páginas correspondientes en CAFANS.</p>
+    </details>
+  </section>
+</main>
+<footer><div class="wrap"><p class="footer-note">Guía editorial independiente. Las imágenes son referencias de estilo. Consulta el catálogo de CAFANS para conocer la disponibilidad.</p></div></footer>
+</body>
+</html>
